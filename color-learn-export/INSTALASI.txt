@@ -1,0 +1,88 @@
+========================================
+COLOR LEARN - PANDUAN INSTALASI CEPAT
+========================================
+
+1. BUAT PROJECT BARU
+   npm create vite@latest color-learn -- --template react-ts
+   cd color-learn
+
+2. INSTALL DEPENDENCIES
+   npm install react-router@7.13.0 motion@12.23.24 lucide-react@0.487.0
+   npm install tailwindcss@4.1.12 @tailwindcss/vite@4.1.12
+
+3. COPY FILES
+   - Copy folder 'src/' dari ZIP ini ke project Anda
+   - Ganti semua isi folder src/
+
+4. SETUP TAILWIND
+   Buat file src/styles/theme.css:
+   @import "tailwindcss";
+
+5. UPDATE main.tsx
+   import './styles/theme.css'
+
+6. JALANKAN
+   npm run dev
+
+========================================
+STRUKTUR FILE YANG HARUS DI-COPY:
+========================================
+
+src/
+├── app/
+│   ├── App.tsx
+│   ├── routes.ts
+│   ├── components/
+│   │   ├── Splash.tsx
+│   │   ├── Root.tsx
+│   │   ├── Home.tsx
+│   │   ├── Material.tsx
+│   │   ├── MaterialDetail.tsx
+│   │   ├── Quiz.tsx
+│   │   ├── Gallery.tsx
+│   │   └── About.tsx
+│   └── utils/
+│       └── sounds.ts
+
+========================================
+DEPENDENCIES YANG DIPERLUKAN:
+========================================
+
+"dependencies": {
+  "react": "18.3.1",
+  "react-dom": "18.3.1",
+  "react-router": "7.13.0",
+  "motion": "12.23.24",
+  "lucide-react": "0.487.0",
+  "tailwindcss": "4.1.12"
+}
+
+========================================
+FITUR APLIKASI:
+========================================
+
+✓ Splash Screen dengan animasi loading
+✓ 4 Menu Utama (Materi, Kuis, Galeri, Tentang)
+✓ 6 Topik Materi Pembelajaran
+✓ Kuis Interaktif 5 Soal
+✓ 9 Kombinasi Warna di Galeri
+✓ Efek Suara Click, Hover, Success, Error
+✓ Animasi Smooth dengan Motion
+✓ Responsive Design
+
+========================================
+ROUTING:
+========================================
+
+/              → Splash Screen
+/app           → Home Menu
+/app/material  → Daftar Materi
+/app/quiz      → Kuis
+/app/gallery   → Galeri
+/app/about     → Tentang
+
+========================================
+
+Untuk panduan lengkap, baca README.md
+
+Selamat mencoba! 🎨
