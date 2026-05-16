@@ -112,8 +112,8 @@ export default function MaterialDetail() {
   }
 
   return (
-    <div className="size-full overflow-auto bg-gray-50">
-      <div className="min-h-full p-8">
+   <div className="size-full overflow-auto bg-[#FFF8F0]">
+      <div className="min-h-full p-8 flex flex-col items-center">
         <Link to="/app/material" className="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900 mb-8" onClick={playNavigationSound}>
           <ArrowLeft className="w-5 h-5" />
           Kembali ke Materi
@@ -122,6 +122,7 @@ export default function MaterialDetail() {
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
+          className="w-full max-w-5xl mx-auto"
         >
           <h1 className="text-5xl mb-8">{material.title}</h1>
 
