@@ -74,7 +74,7 @@ export default function Gallery() {
   const [selectedCombo, setSelectedCombo] = useState<typeof colorCombinations[0] | null>(null);
 
   return (
-    <div className="size-full overflow-auto bg-gray-50">
+    <div className="size-full overflow-auto bg-[#FFF8F0]">
       <div className="min-h-full p-8 flex flex-col items-center">
         <Link to="/app" className="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900 mb-8" onClick={playNavigationSound}>
           <ArrowLeft className="w-5 h-5" />

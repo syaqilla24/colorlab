@@ -36,7 +36,7 @@ const menuItems = [
 
 export default function Home() {
   return (
-    <div className="size-full overflow-auto">
+    <div className="size-full overflow-auto bg-[#FFF8F0]">
       <div className="min-h-full flex flex-col items-center justify-center p-8">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
