@@ -41,7 +41,7 @@ export default function About() {
                 <p className="text-gray-600">Topik Materi</p>
               </div>
               <div className="text-center p-6 bg-green-50 rounded-lg">
-                <div className="text-4xl mb-2">5</div>
+                <div className="text-4xl mb-2">15</div>
                 <p className="text-gray-600">Soal Kuis</p>
               </div>
               <div className="text-center p-6 bg-purple-50 rounded-lg">
