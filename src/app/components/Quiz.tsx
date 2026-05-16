@@ -3,8 +3,7 @@ import { Link } from 'react-router';
 import { motion, AnimatePresence } from 'motion/react';
 import { ArrowLeft, CheckCircle, XCircle } from 'lucide-react';
 import { playClickSound, playNavigationSound, playSuccessSound, playErrorSound } from '../utils/sounds';
-
-const quizData = [
+  const quizData = [
   {
     question: 'Apa saja warna primer?',
     options: ['Merah, Kuning, Biru', 'Merah, Hijau, Biru', 'Orange, Hijau, Ungu', 'Merah, Orange, Kuning'],
@@ -28,6 +27,71 @@ const quizData = [
   {
     question: 'Warna tersier dibuat dari kombinasi?',
     options: ['Dua warna primer', 'Dua warna sekunder', 'Warna primer dan sekunder', 'Hitam dan putih'],
+    correct: 2,
+  },
+  {
+    question: 'Warna apa yang dihasilkan dari Biru + Kuning?',
+    options: ['Hijau', 'Orange', 'Ungu', 'Merah'],
+    correct: 0,
+  },
+  {
+    question: 'Apa fungsi roda warna?',
+    options: [
+      'Mengukur ukuran gambar',
+      'Menentukan kombinasi warna',
+      'Mengatur pencahayaan',
+      'Mengedit foto'
+    ],
+    correct: 1,
+  },
+  {
+    question: 'Warna netral terdiri dari?',
+    options: [
+      'Merah dan biru',
+      'Hijau dan kuning',
+      'Hitam, putih, abu-abu',
+      'Orange dan ungu'
+    ],
+    correct: 2,
+  },
+  {
+    question: 'Warna sekunder adalah?',
+    options: [
+      'Warna hasil campuran dua warna primer',
+      'Warna asli',
+      'Warna gelap',
+      'Warna transparan'
+    ],
+    correct: 0,
+  },
+  {
+    question: 'Campuran Merah + Biru menghasilkan warna?',
+    options: ['Hijau', 'Orange', 'Ungu', 'Kuning'],
+    correct: 2,
+  },
+  {
+    question: 'Apa warna komplementer dari Merah?',
+    options: ['Hijau', 'Orange', 'Biru', 'Kuning'],
+    correct: 0,
+  },
+  {
+    question: 'Warna hangat biasanya memberi kesan?',
+    options: ['Dingin', 'Semangat', 'Tenang', 'Sedih'],
+    correct: 1,
+  },
+  {
+    question: 'Warna dingin identik dengan suasana?',
+    options: ['Panas', 'Cerah', 'Tenang', 'Berisik'],
+    correct: 2,
+  },
+  {
+    question: 'Apa warna hasil campuran Merah + Putih?',
+    options: ['Pink', 'Abu-abu', 'Coklat', 'Ungu'],
+    correct: 0,
+  },
+  {
+    question: 'Hitam dan putih termasuk jenis warna?',
+    options: ['Primer', 'Sekunder', 'Netral', 'Tersier'],
     correct: 2,
   },
 ];
