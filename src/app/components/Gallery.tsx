@@ -75,7 +75,7 @@ export default function Gallery() {
 
   return (
     <div className="size-full overflow-auto bg-gray-50">
-      <div className="min-h-full p-8">
+      <div className="min-h-full p-8 flex flex-col items-center">
         <Link to="/app" className="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900 mb-8" onClick={playNavigationSound}>
           <ArrowLeft className="w-5 h-5" />
           Kembali ke Menu
@@ -84,13 +84,13 @@ export default function Gallery() {
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="mb-12"
+          className="mb-12 text-center"
         >
           <h1 className="text-5xl mb-4">Galeri Kombinasi Warna</h1>
           <p className="text-xl text-gray-600">Klik pada kombinasi untuk melihat detail</p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto place-items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {colorCombinations.map((combo, index) => (
             <motion.div
               key={combo.id}
