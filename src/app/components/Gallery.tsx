@@ -75,7 +75,7 @@ export default function Gallery() {
 
   return (
     <div className="size-full overflow-auto bg-[#FFF8F0]">
-      <div className="min-h-full p-8 flex flex-col items-center">
+      <div className="min-h-full p-8">
         <Link to="/app" className="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900 mb-8" onClick={playNavigationSound}>
           <ArrowLeft className="w-5 h-5" />
           Kembali ke Menu
