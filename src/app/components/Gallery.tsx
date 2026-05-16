@@ -90,7 +90,7 @@ export default function Gallery() {
           <p className="text-xl text-gray-600">Klik pada kombinasi untuk melihat detail</p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto place-items-center">
           {colorCombinations.map((combo, index) => (
             <motion.div
               key={combo.id}

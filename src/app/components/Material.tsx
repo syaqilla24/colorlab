@@ -60,7 +60,7 @@ export default function Material() {
           <p className="text-xl text-gray-600">Pilih topik untuk mempelajari lebih lanjut</p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto place-items-center">
           {materials.map((material, index) => (
             <motion.div
               key={material.id}
